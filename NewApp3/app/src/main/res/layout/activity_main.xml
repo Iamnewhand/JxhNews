@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.yzx.com.newapp3.activitys.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_tab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="新闻"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+    <FrameLayout
+        android:layout_below="@+id/tv_tab"
+        android:id="@+id/fl_container"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/white_click_selector"
+            android:id="@+id/ll_news"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/icon_news"
+                android:layout_width="25dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/tv_news"
+                android:layout_width="wrap_content"
+                android:text="新闻"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:background="#f4f4f4"
+            android:layout_height="35dp" />
+
+        <LinearLayout
+            android:background="@drawable/white_click_selector"
+            android:id="@+id/ll_my"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/icon_my"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/tv_my"
+                android:layout_width="wrap_content"
+                android:text="我的"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
