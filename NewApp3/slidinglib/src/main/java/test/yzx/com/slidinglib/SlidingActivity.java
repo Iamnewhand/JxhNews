@@ -5,4 +5,5 @@ package test.yzx.com.slidinglib;
  */
 
 public class SlidingActivity {
+
 }
